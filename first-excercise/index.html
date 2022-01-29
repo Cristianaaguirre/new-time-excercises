@@ -18,80 +18,84 @@
         <div class="bg">
             <nav class="header__nav center">
                 <a href="#">Inicio</a>
-                <a href="#">Nosotros</a>
+                <a href="#">Sobre mí</a>
                 <a href="#">Clientes</a>
                 <a href="#">Contacto</a>
             </nav>  
         </div>
 
-        <section class="hero center">
-            <h2>Diseño y Desarrollo Web</h2>
+        <section class="hero">
+            <h2 class="hero__title">Diseño y Desarrollo Web Freelancer</h2>
             <div class="hero__map">
                 <img src="/first-excercise/img/svg/icon-map.svg" class="icon">
                 <p>Salta, Argentina</p>
             </div>
-            <a href="#">Contactar</a>
+            <a href="#" class="btn">Contactar</a>
         </section>
     </header>
     
 
-    <main>
+    <main class="main center box-shadow">
         <h2 class="title__main">Mis servicios</h2>
-        <section class="tecnology__option">
-            <h3>Diseño Web</h3>
-            <img src="/first-excercise/img/svg/palette.svg">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi repudiandae illo molestias saepe iusto excepturi animi praesentium fugiat. Quam?</p>
-        </section>
+        
+        <div class="tecnology__container">
+            <section class="tecnology__option">
+                <h3>Diseño Web</h3>
+                <img src="/first-excercise/img/svg/palette.svg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, numquam!</p>
+            </section>
+    
+            <section class="tecnology__option">
+                <h3>Aplicaciones Web</h3>
+                <img src="/first-excercise/img/svg/android.svg">
+                <img src="/first-excercise/img/svg/apple.svg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, animi.</p>
+            </section>
+    
+            <section class="tecnology__option">
+                <h3>E-Comerce</h3>
+                <img src="/first-excercise/img/svg/credit-card.svg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, similique!</p>
+            </section>
+        </div> <!--fin de servicios-->
 
-        <section class="tecnology__option">
-            <h3>Aplicaciones Web</h3>
-            <img src="/first-excercise/img/svg/android.svg">
-            <img src="/first-excercise/img/svg/apple.svg">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis atque error eum dolores iure eligendi ab quo corporis ducimus?</p>
-        </section>
 
-        <section class="tecnology__option">
-            <h3>E-Comerce</h3>
-            <img src="/first-excercise/img/svg/credit-card.svg">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, vero. Quaerat vitae repudiandae vel odio eius fuga sint modi iure.</p>
+        <section class="contact">
+            <h2 class="contact__title">Contacto</h2>
+            <form>
+                <fieldset>
+                    <legend class="title__form">Contactame llenando todos los campos</legend>
+    
+                    <div >
+                        <label for="">Nombre:</label>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+        
+                    <div>
+                        <label for="">Telefono</label>
+                        <input type="number" placeholder="Teléfono">
+                    </div>
+                    
+                    <div>
+                        <label for="">Correo</label>
+                        <input type="email" placeholder="Correo Electrónico">
+                    </div>
+        
+                    <div>
+                        <label for="">Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                    
+                    <div>
+                        <input type="submit" class="btn">
+                    </div>
+                    
+                </fieldset>
+    
+            </form>
         </section>
     </main>
-
-    <section>
-        <h2 class="contact__title">Contacto</h2>
-        <form>
-            <fieldset>
-                <legend class="title__form">Contactame llenando todos los campos</legend>
-
-                <div >
-                    <label for="">Nombre:</label>
-                    <input type="text" placeholder="Nombre">
-                </div>
     
-                <div>
-                    <label for="">Telefono</label>
-                    <input type="number" placeholder="Teléfono">
-                </div>
-                
-                <div>
-                    <label for="">Correo</label>
-                    <input type="email" placeholder="Correo Electrónico">
-                </div>
-    
-                <div>
-                    <label for="">Mensaje</label>
-                    <textarea></textarea>
-                </div>
-                
-                <div>
-                    <input type="submit">
-                </div>
-                
-            </fieldset>
-
-        </form>
-    </section>
-
     <footer>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sapiente.</p>
     </footer>
