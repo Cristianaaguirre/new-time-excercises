@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+
+:root {
+    --white:#fff;
+    --black-color:#212121;
+    --primary-color:#ffc107;
+    --secundary-color:#0097a7;
+    --third-color:#757575;
+    --font:'Krub', sans-serif;
+}
+
+* {
+    font-family: var(--font);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* principal header */
+
+.title__header {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.title__header span {
+    font-size: 2rem;
+}
+
+
