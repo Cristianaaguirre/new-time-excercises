@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root {
+    --primary-color:#9c2790;
+    --dark-primary-color:#891190;
+    --secundary-color:#ffce00;
+    --dark-secundary-color:rgb(233, 187, 2);
+    --white:#fff;
+    --dark:#000;
+    --font:'Staatliches', cursive;
+}
+
+/* Gobal styles */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundary-color);
+    font-family: var(--font);
+}
+
+h1 {font-size: 4rem;}
+
+h2{font-size: 3.2rem;}
+
+h3{font-size: 2.4rem;}
+
+.container {
+    width: 120rem;
+    margin: 0 auto;
+}
