@@ -118,6 +118,10 @@ body {
     color: var(--white);
 }
 
+.hero__title {
+    text-align: center;
+}
+
 .hero__map {
     display: flex;
     justify-content: center;
@@ -133,7 +137,7 @@ body {
 
 .btn {
     margin-top: 2rem;
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
     background-color: var(--secundary-color);
     color: var(--white);
     font-weight: bold;
@@ -258,6 +262,17 @@ body {
 .btn__form {
     width: 100%;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+   .btn__form {
+       width: initial;
+   }
+
+   .boton {
+       display: flex;
+       justify-content: flex-end;
+   }
 }
 
 .inputs textarea {
