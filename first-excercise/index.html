@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="/first-excercise/css/normalize.css" as="style">
-    <link rel="stylesheet" href="/first-excercise/css/normalize.css">
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="stylesheet" href="/css/normalize.css">
     <!-- el preload es mucho muy importante -->
-    <link rel="preload" href="/first-excercise/css/style.css" as="style">
-    <link rel="stylesheet" href="/first-excercise/css/style.css">
+    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="stylesheet" href="/css/style.css ">
     <title>Diseño Freelancer</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
         <section class="hero">
             <h2 class="hero__title">Diseño y Desarrollo Web Freelancer</h2>
             <div class="hero__map">
-                <img src="/first-excercise/img/svg/icon-map.svg" class="icon">
+                <img src="/img/svg/icon-map.svg" class="icon">
                 <p>Salta, Argentina</p>
             </div>
             <a href="#" class="btn">Contactar</a>
@@ -41,20 +41,26 @@
         <div class="tecnology__container">
             <section class="tecnology__option">
                 <h3>Diseño Web</h3>
-                <img src="/first-excercise/img/svg/palette.svg">
+                <div class="tecnology__icon">
+                    <img src="/img/svg/palette.svg">
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, numquam!</p>
             </section>
     
             <section class="tecnology__option">
                 <h3>Aplicaciones Web</h3>
-                <img src="/first-excercise/img/svg/android.svg">
-                <img src="/first-excercise/img/svg/apple.svg">
+                <div class="tecnology__icon">
+                    <img src="/img/svg/android.svg">
+                    <img src="/img/svg/apple.svg">
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, animi.</p>
             </section>
     
             <section class="tecnology__option">
                 <h3>E-Comerce</h3>
-                <img src="/first-excercise/img/svg/credit-card.svg">
+                <div class="tecnology__icon">
+                    <img src="/img/svg/credit-card.svg">
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, similique!</p>
             </section>
         </div> <!--fin de servicios-->
@@ -62,32 +68,33 @@
 
         <section class="contact">
             <h2 class="contact__title">Contacto</h2>
-            <form>
+            <form class="contact__form">
                 <fieldset>
-                    <legend class="title__form">Contactame llenando todos los campos</legend>
-    
-                    <div >
-                        <label for="">Nombre:</label>
-                        <input type="text" placeholder="Nombre">
-                    </div>
-        
-                    <div>
-                        <label for="">Telefono</label>
-                        <input type="number" placeholder="Teléfono">
-                    </div>
-                    
-                    <div>
-                        <label for="">Correo</label>
-                        <input type="email" placeholder="Correo Electrónico">
-                    </div>
-        
-                    <div>
-                        <label for="">Mensaje</label>
-                        <textarea></textarea>
-                    </div>
-                    
-                    <div>
-                        <input type="submit" class="btn">
+                    <legend>Contactame para adquirir mis servicios</legend>
+                    <div class="container__inputs">
+                        <div class="inputs">
+                            <label for="">Nombre:</label>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+            
+                        <div class="inputs">
+                            <label for="">Telefono:</label>
+                            <input type="number" placeholder="Teléfono">
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="">Correo:</label>
+                            <input type="email" placeholder="Correo Electrónico">
+                        </div>
+            
+                        <div class="inputs">
+                            <label for="">Mensaje:</label>
+                            <textarea></textarea>
+                        </div>  
+                    </div> <!--Fin container_inputs-->
+
+                    <div class="boton">
+                        <input type="submit" class="btn btn__form" value="Enviar">
                     </div>
                     
                 </fieldset>
