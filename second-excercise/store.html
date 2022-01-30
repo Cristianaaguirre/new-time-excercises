@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalice -->
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- css main -->
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FrontEnd-Store</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="./img/logo.png" alt="logotipo">
+        </a>
+    </header>
+
+    <nav class="navbar">
+        <a class="navbar__enlaces navbar__enlaces--active" href="#">Tienda</a>
+        <a class="navbar__enlaces" href="./about-us.html">Nosotros</a>
+    </nav>
+
+    <main class="container">
+        <h1>React JS</h1>
+    </main>
+
+    <div class="t-shirt container">
+        <img class="t-shirt__img" src="./img/3.jpg" alt="">
+
+        <div class="t-shirt__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias odio minus voluptate quas fuga amet dolorum sed, tempore inventore!</p>
+
+            <form class="form">
+                <select class="form__options one">
+                    <option disabled selected>--Seleccionar talla--</option>
+                    <option>Pequeña</option>
+                    <option>Mediana</option>
+                    <option>Grande</option>
+                </select>
+                <input class="form__options two" type="number" min="1" placeholder="Cantidad">
+                <input class="form__submit" type="submit" value="Agregar al carrito">
+            </form>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">FrontEnd Store -- todos los derechos reservados 2022</p>
+    </footer>
+</body>
+</html>

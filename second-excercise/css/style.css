@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 :root {
-    --primary-color:#9c2790;
-    --dark-primary-color:#891190;
+    --primary-color:#9c27b0;
+    --dark-primary-color:#89119d;
     --secundary-color:#ffce00;
     --dark-secundary-color:rgb(233, 187, 2);
     --white:#fff;
@@ -41,10 +41,6 @@ p {
     color: var(--white);
 }
 
-img {
-    width: 100%;
-}
-
 h1, h2, h3 {
     text-align: center;
     color: var(--secundary-color);
@@ -57,7 +53,222 @@ h2{font-size: 3.2rem;}
 
 h3{font-size: 2.4rem;}
 
+img {
+    width: 100%;
+}
+
 .container {
-    width: 120rem;
+    width: 80%;
     margin: 0 auto;
 }
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    width: initial;
+    margin: 2rem 0;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    background-color: var(--dark-primary-color);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar__enlaces {
+    font-family: var(--font);
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.navbar__enlaces--active,
+.navbar__enlaces:hover {
+    color: var(--secundary-color);
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem ;
+}
+
+/* Products */
+
+.product {
+    background-color: var(--dark-primary-color);
+    padding: 1rem;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.product__name {
+    font-size: 3.5rem;
+}
+
+.product__price {
+    font-size: 2.8rem;
+    color: var(--secundary-color);
+}
+
+.product__name,
+.product__price {
+    font-family: var(--font);
+    text-align: center;
+    line-height: 1;
+}
+
+/* Img-graphic */
+
+.graphic__img {
+    width: 100%;
+}
+
+.graphic--t-shirt {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.graphic--node {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+}
+/* ----------------------------------------------------------------- */
+/* About us */
+
+main h1 {
+    text-align: center;
+}
+
+.aboutUs {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap : 3rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutUs {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.aboutUs__img {
+    width: 100%;
+    grid-row: 1 / 2;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutUs__img {
+        grid-column: 2 / 3;
+    }
+}
+
+/* Buy */
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px ) {
+    .blocks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.block__title {
+    margin-bottom: 2rem;
+}
+
+.block p {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* store */
+
+@media screen and (min-width: 768px) {
+   .t-shirt {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       column-gap: 2rem;
+   }
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.form__options {
+    border: solid 1rem var(--dark-primary-color);
+    background-color: var(--primary-color);
+    padding: .5rem 2rem;
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+   .form__options {
+       width: initial;
+   }
+}
+
+
+.form__submit {
+    background-color: var(--secundary-color);
+    padding: 1rem 2rem;
+    font-family: var(--font);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color .2s ease;
+    border: none;
+    grid-column: 1 / 3;
+}
+
+@media screen and (min-width: 768px) {
+   .form__submit {
+       grid-column: 1 / 2;
+       width: 100%;
+   }
+}
+
+.form__submit:hover {
+    background-color: var(--dark-secundary-color);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark-primary-color);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer__text {
+    font-family: var(--font);
+    font-size: 2.2rem;
+}
+
+
