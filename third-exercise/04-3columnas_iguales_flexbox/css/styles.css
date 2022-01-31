@@ -39,3 +39,9 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}

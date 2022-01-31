@@ -49,3 +49,24 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media screen and (min-width: 768px) {
+   .three-columns {
+       display: grid;
+       grid-auto-flow: column; /*One form*/
+       grid-template-areas: /*Two form*/
+       "first second third"
+       ;
+       grid-template-columns: 1fr 3fr 1fr;
+       column-gap: 2rem;
+   }
+
+   .principal__content {
+       /* grid-column: 2 / 3; asignamos la posicion en base a la columna*/
+       grid-area: second;
+   }
+
+   .sidebar__one {
+       grid-area: first;
+   }
+}

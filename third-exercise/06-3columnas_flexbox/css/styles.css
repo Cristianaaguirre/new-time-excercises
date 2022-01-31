@@ -48,3 +48,23 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+@media screen and (min-width: 768px) {
+   .flex-container {
+       display: flex;
+       justify-content: space-between;
+       gap: 2rem;
+   }
+
+   .principal-content {
+       flex-basis: 50%;
+   }
+
+   .sidebar {
+       flex-basis: 25%;
+   }
+
+   .sidebar__one {
+       order: -1;
+   }
+}
