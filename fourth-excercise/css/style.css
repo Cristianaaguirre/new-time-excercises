@@ -30,8 +30,7 @@ body {
 /* Global styles */
 
 .container {
-    max-width: 120rem;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -47,7 +46,7 @@ h1  {font-size: 4.8;}
 
 h2  {font-size: 4rem;}
 
-h3  {font-size: 3.2rem;}
+h3  {font-size: 3rem;}
 
 h4  {font-size: 2.8rem;}
 
@@ -68,6 +67,7 @@ img {
 .center-text {
     text-align: center;
 }
+
 /* --------------------------------------------------------------------- */
 /* Header */
 
@@ -132,4 +132,15 @@ img {
     .navbar__nav a{
         margin: 0 2rem;
     }
+ }
+/* ----------------------------------------------------------------- */
+ /* Blog section */
+
+ @media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 3rem;
+    }
+
  }
