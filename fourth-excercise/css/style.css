@@ -68,3 +68,68 @@ img {
 .center-text {
     text-align: center;
 }
+/* --------------------------------------------------------------------- */
+/* Header */
+
+.header {
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+}
+
+.header__text {
+    color: var(--secundary);
+}
+
+.header__text h3,
+.header__text p {
+    margin: 0 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .header__navbar {
+        display: flex;
+        width: 80%;
+        height: 7rem;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__text {margin-top: 15rem;}
+    .header__text h3 {font-size: 4rem;}
+    .header__text p {font-size: 2rem;}
+}
+
+/* Logo */
+
+.logo__title,
+.navbar__nav a {
+    color: var(--secundary);
+}
+
+.logo__title {
+    font-weight: normal;
+}
+
+.logo__bold {
+    font-weight: bold;
+}
+
+.navbar__nav a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    font-family: var(--heading-fonts);
+}
+
+@media screen and (min-width: 768px) {
+    .navbar__nav {
+        display: flex;
+    }
+    .navbar__nav a{
+        margin: 0 2rem;
+    }
+ }
