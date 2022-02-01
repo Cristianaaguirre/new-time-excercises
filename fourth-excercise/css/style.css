@@ -8,6 +8,7 @@
     --primary:#784d3c;
     --secundary:#fff;
     --black:#000;
+    --gray:#e1e1e1;
 }
 
 /* normalize style */
@@ -139,8 +140,41 @@ img {
  @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2fr 1fr;
         column-gap: 3rem;
     }
 
+ }
+
+ .block {
+     margin-bottom: 2rem;
+     border-bottom: 1px solid var(--gray);
+ }
+
+ .block:last-of-type {
+     border:none;
+     margin-bottom: 0;
+ }
+
+ .block__content p {
+     margin-bottom: 1rem;
+ }
+
+ .btn {
+     text-align: center;
+     display: block;
+     padding: .5rem 3rem;
+     font-size: 1.5rem;
+     font-weight: bold;
+     margin-bottom: 2rem;
+     text-transform: uppercase;
+     font-family: var(--heading-fonts);
+     color: var(--secundary);
+     background-color: var(--black);
+ }
+
+ @media screen and (min-width: 768px) {
+    .btn {
+        display: inline-block;
+    }
  }
