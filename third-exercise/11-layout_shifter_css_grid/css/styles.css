@@ -49,3 +49,41 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media screen and (min-width: 768px) {
+   .layout-shifter {
+       display: grid;
+       grid-template-areas: 
+       "content"
+       "bottom"
+       ;
+   }
+
+   .sidebar {
+       grid-area: bottom;
+   }
+
+   .principal-content {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 2rem;
+   }
+}
+
+@media screen and (min-width: 992px) {
+   .layout-shifter {
+       grid-template-areas: 
+       "content sidebar"
+       ;
+       column-gap: 2rem;
+   }
+
+   .sidebar {
+       grid-area: sidebar;
+   }
+
+   .principal-content {
+       grid-template-rows: repeat(2, 1fr);
+       grid-template-columns: unset;
+   }
+}

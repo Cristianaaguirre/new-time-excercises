@@ -37,3 +37,25 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+.contenedor {
+    max-width: 1440px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+   .contenedor {
+       width: 80%;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .contenedor {
+       width: 90%;
+   }
+}
