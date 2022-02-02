@@ -41,6 +41,7 @@ a {
 
 h1, h2, h3, h4 {
     font-family: var(--heading-fonts);
+    line-height: 1.5;
 }
 
 h1  {font-size: 4.8;}
@@ -177,4 +178,47 @@ img {
     .btn {
         display: inline-block;
     }
+ }
+
+ /* ------------------------------------------------------------- */
+ /* Aside */
+   
+.sidebar h4 {
+    margin-bottom: 3rem;
+}
+ @media screen and (min-width: 768px) {
+    .class {
+        margin-left: 2rem;
+    }
+ }
+
+ .widget-class {
+     list-style: none;
+     border-bottom: 1px solid var(--gray);
+ }
+
+ .widget-class:nth-child(1) {
+     margin-bottom: 3rem;
+ }
+
+ .widget-class:last-of-type {
+     border: none;
+     margin: 0;
+ }
+
+ .widget-class h4 {
+     font-size: 2.3rem;
+ }
+
+ .widget-class__label {
+     font-family: var(--heading-fonts);
+     font-weight: bold;
+ }
+
+ .widget-class__info {
+     font-weight: normal;
+ }
+
+ .btn--modifier {
+     background-color: var(--primary);
  }
