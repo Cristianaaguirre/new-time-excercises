@@ -247,5 +247,64 @@ img {
         column-gap: 2rem;
         margin-bottom: 2rem;
     }
+
+    .about-us__content p:first-child {
+        margin-top: 0;
+    }
+ }
+
+ /*-------------------------------------------------------------*/
+ /*Another HTML - class.html - main*/
+
+.class {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--gray);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.class:last-of-type {
+    border: none;
+}
+
+.class__label {
+    font-family: var(--heading-fonts);
+    font-weight: bold;
+}
+
+.class__price {
+    font-weight: normal;
+}
+
+/* img */
+
+.class__img {
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.class__img-one {
+    background-image: url(../img/curso1.jpg);
+}
+
+.class__img-two {
+    background-image: url(../img/curso2.jpg);
+}
+
+.class__img-three {
+    background-image: url(../img/curso3.jpg);
+}
+
+ @media screen and (min-width: 768px) {
+    .class {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        column-gap: 2rem;
+        width: 75%;
+        margin: 2rem auto;
+    }
  }
 
