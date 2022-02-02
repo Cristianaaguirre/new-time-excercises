@@ -127,6 +127,10 @@ img {
     font-family: var(--heading-fonts);
 }
 
+.navbar__nav a:last-child {
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
     .navbar__nav {
         display: flex;
@@ -221,4 +225,10 @@ img {
 
  .btn--modifier {
      background-color: var(--primary);
+ }
+
+ /* ------------------------------------------------------------ */
+ /* Footer */
+ .main {
+    background-color: var(--black);
  }
