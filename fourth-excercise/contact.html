@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Styles -->
+    <link rel="preload" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Coffe Blog</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__navbar">
+            <a class="navbar__logo" href="index.html">
+                <h1 class="logo__title no-margin center-text">Blog<span class="logo__bold">DeCafé</span></h1>
+            </a>
+            <nav class="navbar__nav">
+                <a class="center-text" href="about-us.html">Nosotros</a>
+                <a class="center-text" href="class.html">Cursos</a>
+                <a class="center-text" href="contact.html">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="header__text center-text">            
+            <h3 class="no-margin">Blog de café con consejos y cursos</h3>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos.</p>
+        </div>
+    </header>
+
+    <main class="container-main container">
+        <h3 class="center-text">Contacto</h3>
+
+        <div class="contact-bg"></div>
+
+        <form class="form">
+            <div class="input">
+                <label class="input__label" for="nombre">Nombre:</label>
+                <input class="input__field" type="text" placeholder="Tu nombre" id="nombre">
+            </div>
+            <div class="input">
+                <label class="input__label" for="email">Correo:</label>
+                <input class="input__field" type="email" placeholder="Tu E-mail" id="email">
+            </div>
+            <div class="input">
+                <label class="input__label" for="mensaje">Mensaje:</label>
+                <textarea class="input__field input__field--textarea" id="mensaje"></textarea>
+            </div>
+            <div class="input">
+                <input type="submit" value="Enviar" class="btn btn--form">
+            </div>
+        </form>
+    </main>
+
+    <footer class="main">
+        <div class="container">
+            <div class="header__navbar header__navbar--modifier">
+                <a class="navbar__logo" href="index.html">
+                    <h1 class="logo__title no-margin center-text">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navbar__nav">
+                    <a class="center-text" href="about-us.html">Nosotros</a>
+                    <a class="center-text" href="class.html">Cursos</a>
+                    <a class="center-text" href="contact.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

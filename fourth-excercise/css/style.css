@@ -317,3 +317,63 @@ img {
        margin: 0 auto;
    }
 }
+
+/* --------------------------------------------------------------------------------- */
+/* Another HTML - contac.html */
+
+.contact-bg {
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+
+}
+
+.container-main {
+    margin-bottom: 3rem;
+}
+
+/* Form */
+
+.form {
+    background-color: var(--secundary);
+    margin: -5rem auto 0 auto;
+    width: 90%;
+    padding: 3rem;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+}
+
+.input {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input__label {
+    flex: 0 0 7rem;
+}
+
+.input__field {
+    flex: 1;
+    border: none;
+    background-color: var(--gray);
+    width: 100%;
+}
+
+.input__field--textarea {
+    width: 100%;
+    height: 10rem;
+}
+
+.btn--form {
+    width: 100%;
+    border: none;
+    padding: 1.5rem 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .btn--form {
+        width: initial;
+    }
+}
