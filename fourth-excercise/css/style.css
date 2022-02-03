@@ -73,8 +73,15 @@ img {
 /* --------------------------------------------------------------------- */
 /* Header */
 
-.header {
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp {
     background-image: url(../img/banner.jpg);
+}
+
+.header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
