@@ -8,12 +8,16 @@ product = true; // reasignar el valor de la variable
 
 disponible = true; 
 
+//Sintaxis para crear variables sin necesidad de poner var en diferentes ocaciones
+
 var product = "Computadoras",
     disponible = false,
-    categorias = "Computadoras"; // Inicializar multiples variables sin usar la palabra VAR
+    categorias = "Computadoras";
+ /* Inicializar multiples variables sin usar la palabra VAR*/
 
-    /*var 1disponible 
-    var -disponible / Estas sintaxis son erroneas, pero si puedes iniciar una variable con _*/
+/*var 1disponible 
+var -disponible / 
+Estas sintaxis son erroneas, pero si puedes iniciar una variable con _*/
 
 /*----------------------------------------------------------------------------------------------------------------*/
 
