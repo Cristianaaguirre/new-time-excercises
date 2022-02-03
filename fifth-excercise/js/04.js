@@ -61,12 +61,14 @@ resultado = Math.max(10, 4, 3, 12); // Nos muestra el numero mas alto de un list
 resultado = Math.random; // Nos devuelve un numero random
 resultado = Math.floor(Math.random() * 10)
 
-/*Un ejemplo para utilizar este tipo de funciones es la siguiente:
-Si tuvieramos una pagina donde se colocan productos y tuviesemos 77 productos y cada pagina
-pudiera mostrar 20 productos, en total tendriamos 3.85 paginas. No podemos mostrar 3.85p
-para eso podriamos utilizar .ciel y crear 4 paginas para mostrar todos los productos
-*/
 console.log(resultado);
 
 
-/*---------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+//Boleans - solo dos valores
+
+let boleanOne = true;
+let boleanTwo = false;
+
+console.log(boleanOne);
+console.log(boleanTwo);
