@@ -16,10 +16,10 @@ const statusProducto = producto.disponible;*/
 console.log(nombreProducto);
 console.log(statusProducto);*/
 
-//Destructuring Objet - la forma mas corta de obtener las propiedades de un objeto y crear una 
-//variable a la vez , sin embargo, la variable tomara el nombre de la propiedad dentro del objeto, no puedo modificar el nombre.
+//Destructuring Objet - la forma mas corta de obtener las propiedades de un objeto y crear una variable a la vez , sin embargo, la variable tomara el nombre de la propiedad dentro del objeto, no puedo modificar el nombre.
 
-const {precio, nombreProducto} = producto;
+const {nombreProducto,disponible, disponible} = producto;
 
-console.log(precio);
 console.log(nombreProducto);
+console.log(disponible);
+console.log(precio);

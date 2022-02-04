@@ -13,13 +13,13 @@ const sumar2 = function () {
 }
 sumar2();
 
-//IIFE - no hay que llamarla - no es recomendalbe utilizar como una funcion reutilizable pero si es muy importante para proteger variables de otros documentos, ya que desde un archivo js se pueden llamar variables que se encuentren en otros archivos. Con IIFE se evita que esas variables sean llamadas y con ello evitar problemas.
+//IIFE - no hay que llamarla - no es recomendalbe ya que no es reutilizable pero si es muy importante para proteger variables de otros documentos, ya que desde un archivo js se pueden llamar variables que se encuentren en otros archivos. Con IIFE se evita que esas variables sean llamadas y con ello evitar problemas.
 
 (function() {
     console.log("Esto es una funcion");
 })();
 
-/* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------- */
 
 //Hoisting - Js se ejecuta en dos ocaciones, primero se registran las funciones y luego se registran los llamados
 

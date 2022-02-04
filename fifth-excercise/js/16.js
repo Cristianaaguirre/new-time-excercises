@@ -49,7 +49,7 @@ meses.forEach( mes => {
         console.log(mes)
     }
 })
-
+/* -------------------------------------------------------------------------- */
 // Convertir en un arrow function
 
 let resultado;

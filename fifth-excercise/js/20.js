@@ -19,9 +19,6 @@ carrito.forEach( lista => console.log(lista.nombre));
 
 //Usaremos map cuando se quiera iterar sobre un listado y crear un nuevo arreglo.
 
-carrito.forEach( lista => console.log(lista.precio));
-
 const arreglo2 = carrito.map( lista => `Nombre del producto: ${lista.nombre}`);
-
 
 console.log(arreglo2);

@@ -22,7 +22,7 @@ for (let i = 0; i < carrito.length; i++) {
     console.log(carrito[i]);
 };
 
-//While Loop - Mientras que en el foor todas las condiciones estan dentro del parentesis, en el while se coloca la variable por fuera, la condicion en el parentesis y el incrementador al final del while.
+//While Loop - Mientras que en el for todas las condiciones estan dentro del parentesis, en el while se coloca la variable por fuera, la condicion en el parentesis y el incrementador al final del while.
 
 //El while primero evalua la condicion y luego ejecuta el codigo, sino, no se ejecuta.
 

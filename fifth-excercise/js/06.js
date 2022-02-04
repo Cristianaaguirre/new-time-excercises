@@ -25,7 +25,7 @@ console.log(producto.disponible);
 
 console.log(producto["nombreProduct"]);*/
 
-/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 
 //Modificar los objetos - puede agregarse y quitarse propiedades de ellos
 
