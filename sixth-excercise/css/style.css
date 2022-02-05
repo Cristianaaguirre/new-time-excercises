@@ -147,7 +147,7 @@ img {
 @media (min-width: 768px) {
     .boton {
         display: inline-block;
-
+        margin-bottom: 0;
     }
 }
 .boton:hover {
@@ -229,11 +229,15 @@ img {
 /** Contacto **/
 
 .error {
-    background-color: rgb(185, 0, 0);
-    text-align: center;
-    padding: 1rem;
-    color: var(--blanco);
-    text-transform: uppercase;
+    color: rgb(233, 50, 50);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.enviado {
+    color: rgb(168, 226, 80);
+    font-size: 1.8rem;
+    margin: 0;
 }
 .correcto {
     background-color: rgb(74, 185, 0);

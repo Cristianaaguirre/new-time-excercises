@@ -21,7 +21,7 @@ const producto = {
 console.log(producto.precio);
 console.log(producto.disponible);
 
-//Sintaxis de corchetes
+//Sintaxis de corchetes-------------------
 
 console.log(producto["nombreProduct"]);*/
 
