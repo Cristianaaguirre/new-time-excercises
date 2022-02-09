@@ -352,7 +352,7 @@ body {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #000;
 }
 
@@ -376,11 +376,15 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.5rem;
 }
 
 h3 {
   font-size: 3rem;
+}
+
+img {
+  width: 100%;
 }
 
 .header {
@@ -399,7 +403,7 @@ h3 {
 }
 .header h2 {
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -458,13 +462,47 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 5rem;
+  font-size: 3rem;
+}
+@media screen and (min-width: 480px) {
+  .title__video {
+    font-size: 4rem;
+  }
 }
 .title__video span {
   background-color: #f53756;
   color: #fff;
   padding: 0.3rem;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+@media screen and (min-width: 480px) {
+  .title__video span {
+    font-size: 3rem;
+  }
+}
+
+.about-us {
+  padding: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 5rem 10rem;
+  }
+}
+
+.about__text h2 {
+  margin-bottom: 3rem;
+}
+.about__text p {
+  line-height: 2.2rem;
+}
+.about__text .date {
+  margin-bottom: 2rem;
+  color: #f53756;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

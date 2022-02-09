@@ -1,0 +1,21 @@
+
+.about-us {
+    padding: $separacion;
+    @include tablet {
+        @include grid (2, $separacion);
+        padding: $separacion 10rem;
+    }
+}
+.about__text {
+    h2 {
+        margin-bottom: 3rem;
+    }
+    p {
+        line-height: 2.2rem;
+    }
+    .date {
+        margin-bottom: 2rem;
+        color: $rosa;
+        font-weight: bold;
+    }
+}
