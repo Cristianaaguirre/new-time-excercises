@@ -412,6 +412,11 @@ img {
   }
 }
 
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
 .header__nav {
   display: flex;
   flex-direction: column;
