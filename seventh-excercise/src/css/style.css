@@ -405,16 +405,22 @@ img {
 .header h2 {
   color: #fff;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 @media screen and (min-width: 768px) {
   .header h2 {
     margin-bottom: 0;
+    font-size: 3.5rem;
   }
 }
 .header .menu {
   font-size: 2rem;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .header .menu {
+    display: none;
+  }
 }
 
 .header__menu {
@@ -424,22 +430,11 @@ img {
 }
 
 .header__nav {
-  position: absolute;
-  background-color: #f53756;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60vh;
-  margin-top: 7.8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .header__nav {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -453,6 +448,22 @@ img {
 }
 .header__nav a:hover {
   color: #f3f46d;
+}
+
+.header__nav--modifier {
+  position: absolute;
+  background-color: #f53756;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  margin-top: 7.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 .video {
