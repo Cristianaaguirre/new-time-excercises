@@ -1,6 +1,7 @@
 
 .header {
     background-color: $verde;
+    position: relative;
 
     .header__content {
         padding: calc($separacion / 2) 0;
@@ -13,24 +14,39 @@
     }
     h2 {
         color: $blanco;
-        margin-bottom: 5rem;
         text-align: center;
+        font-size: 2.5rem;
         @include tablet {
             margin-bottom: 0;
         }
+    }
+
+    .menu {
+        font-size: 2rem;
+        color: $blanco;
     }
 }
 
 .header__menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__nav {
+    position: absolute;
+    background-color: $rosa;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    margin-top: 7.8rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
 
     @include tablet {
         flex-direction: row;
@@ -41,7 +57,7 @@
 
     a {
         font-weight: $regular;
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         color: $blanco;
 
         &:hover {

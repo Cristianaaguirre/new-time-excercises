@@ -389,6 +389,7 @@ img {
 
 .header {
   background-color: #4cb8b3;
+  position: relative;
 }
 .header .header__content {
   padding: 2.5rem 0;
@@ -403,25 +404,39 @@ img {
 }
 .header h2 {
   color: #fff;
-  margin-bottom: 5rem;
   text-align: center;
+  font-size: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .header h2 {
     margin-bottom: 0;
   }
 }
+.header .menu {
+  font-size: 2rem;
+  color: #fff;
+}
 
 .header__menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav {
+  position: absolute;
+  background-color: #f53756;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  margin-top: 7.8rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 @media screen and (min-width: 768px) {
   .header__nav {
@@ -433,7 +448,7 @@ img {
 }
 .header__nav a {
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   color: #fff;
 }
 .header__nav a:hover {
