@@ -345,6 +345,9 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 body {
@@ -358,7 +361,7 @@ p {
 
 .container {
   max-width: 120rem;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -385,6 +388,18 @@ h3 {
 
 img {
   width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.bg-amarillo {
+  background-color: #f3f46d;
+}
+
+.bg-verde {
+  background-color: #4cb8b3;
 }
 
 .header {
@@ -519,8 +534,8 @@ img {
   .about-us {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-    padding: 5rem 10rem;
+    gap: 2rem;
+    padding: 4rem 8rem;
   }
 }
 
@@ -534,6 +549,61 @@ img {
   margin-bottom: 2rem;
   color: #f53756;
   font-weight: bold;
+}
+
+.line-up {
+  background-color: #f53756;
+  padding: 5rem 0;
+}
+.line-up h2 {
+  margin-bottom: 5rem;
+}
+.line-up .title {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.container-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5rem auto;
+  gap: 5rem;
+}
+.container-block .name {
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 0 3rem;
+}
+.container-block .block {
+  border-radius: 0.5rem;
+}
+
+.rock::after {
+  content: "";
+  width: 20rem;
+  height: 10rem;
+  display: block;
+  background: url(/src/img/icono_rock.png);
+  background-position: center;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+}
+
+.edm::after {
+  content: "";
+  width: 20rem;
+  height: 10rem;
+  display: block;
+  background: url(/src/img/icono_edm.png);
+  background-position: center;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+}
+
+.calendario li {
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

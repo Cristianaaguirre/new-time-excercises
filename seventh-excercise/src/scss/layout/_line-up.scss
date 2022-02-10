@@ -1,0 +1,56 @@
+.line-up {
+    background-color: $rosa;
+    padding: $separacion 0;
+
+    h2 {margin-bottom: $separacion;}
+
+    .title {
+        color: $blanco;
+        text-transform: uppercase;
+    }
+
+}
+.container-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: $separacion auto;
+    gap: $separacion;
+    .name {
+        font-size: 2rem;
+        margin: 2rem;
+        padding: 0 3rem;
+    }
+    .block {
+        border-radius: .5rem;
+    }
+}
+
+.rock::after {
+    content: "";
+    width: 20rem;
+    height: 10rem;
+    display: block;
+    background: url(/src/img/icono_rock.png);
+    background-position: center;
+    background-size: 15rem;
+    background-repeat: no-repeat;
+}
+
+.edm::after {
+    content: "";
+    width: 20rem;
+    height: 10rem;
+    display: block;
+    background: url(/src/img/icono_edm.png);
+    background-position: center;
+    background-size: 15rem;
+    background-repeat: no-repeat;
+}
+
+.calendario {
+    li {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+}
