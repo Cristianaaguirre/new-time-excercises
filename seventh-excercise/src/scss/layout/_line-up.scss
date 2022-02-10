@@ -50,7 +50,17 @@
 
 .calendario {
     li {
-        padding: 1rem;
+        padding: 1.3rem 4rem;
         font-size: 1.5rem;
+        span {
+            font-weight: bold;
+        }
     }
+}
+
+.bg-verde .calendario li:nth-child(odd) {
+    background-color: darken($verde, 10)
+}
+.bg-amarillo .calendario li:nth-child(odd) {
+    background-color: darken($amarillo, 20)
 }
