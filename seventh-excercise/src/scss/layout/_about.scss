@@ -5,6 +5,10 @@
         @include grid (2, 2rem);
         padding: 4rem 8rem;
     }
+
+    .about__img {
+        img {width: 100%;}
+    }
 }
 .about__text {
     h2 {

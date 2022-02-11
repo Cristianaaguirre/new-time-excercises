@@ -386,10 +386,6 @@ h3 {
   font-size: 3rem;
 }
 
-img {
-  width: 100%;
-}
-
 .center-text {
   text-align: center;
 }
@@ -533,10 +529,13 @@ img {
 @media screen and (min-width: 768px) {
   .about-us {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.5fr);
     gap: 2rem;
     padding: 4rem 8rem;
   }
+}
+.about-us .about__img img {
+  width: 100%;
 }
 
 .about__text h2 {
@@ -615,6 +614,19 @@ img {
 
 .bg-amarillo .calendario li:nth-child(odd) {
   background-color: #e8e912;
+}
+
+.gallery {
+  margin: 5rem auto;
+}
+
+.crear-galeria {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
