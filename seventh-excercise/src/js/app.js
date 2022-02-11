@@ -50,16 +50,8 @@ function mostrarImagen (e) {
     body.appendChild(overlay)
     body.classList.add('fijar-imagen'); //fijar imagen en la pantalla
 
-    //agregar boton
-
-    const crearBoton = document.createElement('P');
-    crearBoton.textContent = "X"
-    crearBoton.classList.add('btn-cerrar')
-    overlay.appendChild(crearBoton)
+    // cerrar imagen
     
-    //cerrar imagen
-
-    crearBoton.onclick = () => overlay.remove();
     overlay.onclick = function () {
         body.classList.remove('fijar-imagen')
         overlay.remove();

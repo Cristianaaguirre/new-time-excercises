@@ -16,14 +16,14 @@
                 <i class="fas fa-bars menu"></i>
             </div>
             <nav class="header__nav">
-                <a href="#" class="nav__option">Line up</a>
-                <a href="#" class="nav__option">Galería</a>
+                <a href="#line" class="nav__option">Line up</a>
+                <a href="#galeria" class="nav__option">Galería</a>
                 <a href="#" class="nav__option">Boletos</a>
             </nav>
         </div>
     </header>
 
-    <div class="video">
+    <div id="video" class="video">
         <div class="overlay">
             <div class="container container-video">
                 <h2 class="title__video">Rock & EDM Festival:
@@ -38,7 +38,7 @@
         </video>
     </div>
 
-    <div class="about-us container">
+    <div id="about" class="about-us container">
         <div class="about__img">
             <img src="./src/img/imagen_vocalista.jpg" alt="">
         </div>
@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    <section class="line-up">
+    <section id="line" class="line-up">
         <h2 class="center-text title">Line Up</h2>
         <p class="center-text title">Viernes 21</p>
         <div class="container-block container">
@@ -106,9 +106,34 @@
         </div> <!-- Final block Container-->
     </section>
 
-    <section class="gallery container">
+    <section id="galeria" class="gallery container">
         <h2 class="center-text">Galería</h2>
         <ul class="crear-galeria"></ul>
+    </section>
+
+    <section class="pases">
+        <h2>Boletos</h2>
+        <div class="container container--pases">
+            <div class="one-day">
+                <h4>Pase Día 1</h4>
+                <ul>
+                    <li>Ambos escenarios</li>
+                    <li>Comida y Bebida</li>
+                </ul>
+                <p class="price">$180</p>
+            </div>
+            <div class="two-day">
+                <h4>Pase Día 1</h4>
+                <p class="title-day">Incluye</p>
+                <ul>
+                    <li>Ambos escenarios</li>
+                    <li>Comida y Bebida</li>
+                    <li>Comisa de evento</li>
+                    <li>Pase Vip</li>
+                </ul>
+                <p class="price">$100</p>
+            </div>
+        </div>
     </section>
     <script src="./src/js/app.js"></script>
     <script src="https://kit.fontawesome.com/32f9c4f293.js" crossorigin="anonymous"></script>
