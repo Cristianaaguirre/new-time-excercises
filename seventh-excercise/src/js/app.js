@@ -23,13 +23,13 @@ function createGallery () {
         const imagen = document.createElement('IMG');
         imagen.src = `/src/img/thumb/${i}.jpg`;
         imagen.dataset.imagenId = i;
+
         //mostrar imagen
 
         imagen.onclick = mostrarImagen;
 
         const list = document.createElement('LI');
-        list.appendChild(imagen)
-        
+        list.appendChild(imagen);
         galeria.appendChild(list);
     }
 }
@@ -40,12 +40,28 @@ function mostrarImagen (e) {
     const imagen = document.createElement('IMG')
     imagen.src = `/src/img/grande/${id}.jpg`;
 
+    //Agregando un overlay
+
     const overlay = document.createElement('DIV');
     overlay.appendChild(imagen);
     overlay.classList.add('overlay');
 
-    //remove overlay
-
     const body = document.querySelector('body');
     body.appendChild(overlay)
+    body.classList.add('fijar-imagen'); //fijar imagen en la pantalla
+
+    //agregar boton
+
+    const crearBoton = document.createElement('P');
+    crearBoton.textContent = "X"
+    crearBoton.classList.add('btn-cerrar')
+    overlay.appendChild(crearBoton)
+    
+    //cerrar imagen
+
+    crearBoton.onclick = () => overlay.remove();
+    overlay.onclick = function () {
+        body.classList.remove('fijar-imagen')
+        overlay.remove();
+    } 
 }

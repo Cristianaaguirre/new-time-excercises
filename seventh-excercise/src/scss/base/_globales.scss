@@ -13,6 +13,9 @@ html {
 
 body {
     font-family: $fuentePrincipal;
+    &.fijar-imagen {
+        overflow: hidden;
+    }
 }
 
 p {
