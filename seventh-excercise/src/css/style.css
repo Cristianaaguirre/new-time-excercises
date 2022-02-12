@@ -717,4 +717,11 @@ h3 {
   border-bottom: none;
 }
 
+footer h4 {
+  background-color: #f53756;
+  padding: 2rem 0;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
 /*# sourceMappingURL=style.css.map */
