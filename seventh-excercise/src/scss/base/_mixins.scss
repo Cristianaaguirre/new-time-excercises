@@ -17,5 +17,6 @@
     display: grid;
     grid-template-columns: repeat($columnas, .5fr);
     gap: $espaciado;
+    place-items: stretch center;
 }
 

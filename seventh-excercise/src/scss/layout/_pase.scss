@@ -1,0 +1,56 @@
+.pases {
+    background-color: $verde;
+    padding: $separacion;
+    h2{
+        color: $blanco;
+        margin-bottom: $separacion;
+    }
+}
+
+.container--pases {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    @include telefono {
+        @include grid (2, 0)
+    }
+}
+
+.pases__items {
+    width: min(30rem, 100%);
+
+    h4 {
+        color: $blanco;
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+    
+    .pases__day {
+        background-color: $rosa;
+        color: $blanco;
+        padding: 1rem 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .price {
+        background-color: $morado;
+        padding: 1rem;
+        color: $blanco;
+        font-weight: bold;
+    }
+}
+
+.pases__list {
+    li {
+        background-color: $blanco;
+        padding: 1rem .5rem;
+        font-size: 1.5rem;
+        border-bottom: 1px solid rgb(192, 190, 190);
+    }
+
+   & li:nth-last-of-type(1) {
+       border-bottom: none;
+   }
+}
