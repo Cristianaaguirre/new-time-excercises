@@ -2,6 +2,11 @@
 .header {
     background-color: $verde;
     position: relative;
+    
+    &.fijo {
+        position: fixed;
+        width: 100%;
+    }
 
     .header__content {
         padding: calc($separacion / 2) 0;

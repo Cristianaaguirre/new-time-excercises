@@ -57,3 +57,28 @@ function mostrarImagen (e) {
         overlay.remove();
     } 
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    navegacionFija();
+
+})
+
+function navegacionFija () {
+
+    const barra = document.querySelector('.header')
+
+    const observer = new IntersectionObserver( function(entries) {
+        if (entries[0].isIntersecting) {
+            barra.classList.remove('fijo')
+            console.log('lo veo')
+        } else {
+            barra.classList.add('fijo')
+            console.log("no lo veo")
+        }
+    })
+
+    observer.observe(document.querySelector('.video'))
+}

@@ -406,6 +406,10 @@ h3 {
   background-color: #4cb8b3;
   position: relative;
 }
+.header.fijo {
+  position: fixed;
+  width: 100%;
+}
 .header .header__content {
   padding: 2.5rem 0;
 }
